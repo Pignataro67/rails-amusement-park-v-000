@@ -1,0 +1,13 @@
+<h1>Login</h1>
+<br>
+<%= form_tag(sessions_path) do %>
+<br>
+  <%= label_tag "Name" %>
+  <%= text_field_tag "user[name]" %>
+  <br>
+  <%= label_tag "Password" %>
+  <%= text_field_tag "user[password]" %>
+  <br>
+
+  <%= submit_tag "Sign In " %>
+<%end%>
